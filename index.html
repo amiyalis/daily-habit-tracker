@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Habit Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app-container">
+    <header>
+      <h1>Daily Habits</h1>
+      <p id="current-date"></p>
+    </header>
+
+    <!-- Progress Bar -->
+    <div class="progress-section">
+      <div class="progress-info">
+        <span>Today's Progress</span>
+        <span id="progress-text">0%</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+    </div>
+
+    <!-- Add Habit Input -->
+    <form id="habit-form" class="input-group">
+      <input 
+        type="text" 
+        id="habit-input" 
+        placeholder="e.g., Drink 2L of water, Study 1h..." 
+        required 
+        autocomplete="off"
+      >
+      <button type="submit">Add</button>
+    </form>
+
+    <!-- Habits List -->
+    <ul id="habit-list" class="habit-list"></ul>
+
+    <!-- Reset Button -->
+    <button id="reset-day-btn" class="reset-btn">Reset Today's Progress</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #701a75;
+}
+
+.app-container {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  max-width: 440px;
+  padding: 30px;
+  border-radius: 24px;
+  box-shadow: 0 15px 35px rgba(219, 39, 119, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: #9d174d;
+  margin-bottom: 4px;
+}
+
+header p {
+  font-size: 0.95rem;
+  color: #be185d;
+  opacity: 0.8;
+}
+
+/* Progress Bar */
+.progress-section {
+  margin-bottom: 24px;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #be185d;
+  margin-bottom: 8px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: rgba(244, 114, 182, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #db2777 0%, #f472b6 100%);
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+/* Form Input */
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 12px 16px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 2px solid #f472b6;
+  border-radius: 14px;
+  font-size: 0.95rem;
+  color: #701a75;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.input-group input::placeholder {
+  color: #f472b6;
+  opacity: 0.7;
+}
+
+.input-group input:focus {
+  border-color: #db2777;
+  box-shadow: 0 0 0 3px rgba(219, 39, 119, 0.15);
+}
+
+.input-group button {
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #db2777 0%, #be185d 100%);
+  color: white;
+  border: none;
+  border-radius: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.1s, opacity 0.2s;
+}
+
+.input-group button:hover {
+  opacity: 0.9;
+}
+
+.input-group button:active {
+  transform: scale(0.97);
+}
+
+/* Habit List */
+.habit-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.habit-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(244, 114, 182, 0.3);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.habit-item:hover {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-color: #f472b6;
+}
+
+.habit-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.checkbox {
+  width: 22px;
+  height: 22px;
+  border: 2px solid #f472b6;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.8rem;
+  background-color: white;
+  transition: all 0.2s;
+}
+
+.habit-text {
+  color: #701a75;
+  font-weight: 500;
+}
+
+.habit-item.completed {
+  background-color: rgba(252, 231, 243, 0.8);
+  border-color: #f472b6;
+}
+
+.habit-item.completed .checkbox {
+  background-color: #db2777;
+  border-color: #db2777;
+}
+
+.habit-item.completed .habit-text {
+  text-decoration: line-through;
+  color: #db2777;
+  opacity: 0.6;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #f472b6;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.delete-btn:hover {
+  color: #be185d;
+  background-color: rgba(244, 114, 182, 0.15);
+}
+
+/* Reset Button */
+.reset-btn {
+  width: 100%;
+  padding: 10px;
+  background: none;
+  border: 1px dashed #f472b6;
+  border-radius: 12px;
+  color: #be185d;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.reset-btn:hover {
+  background-color: rgba(244, 114, 182, 0.1);
+  border-color: #db2777;
+  color: #db2777;
+}
