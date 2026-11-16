@@ -9,11 +9,11 @@ A clean, aesthetic, and responsive Daily Habit Tracker built with web technologi
 
 ## ✨ Features
 
-- 📝 **Easy Habit Management:** Quickly add new daily habits or remove completed ones
-- 📊 **Real-Time Progress Bar:** Dynamic visual bar and percentage counter updating as you check off tasks
-- 💾 **Auto-Save (`localStorage`):** Keeps your habits and daily progress saved even after refreshing the browser
-- 🔄 **One-Click Daily Reset:** Clear all completed checkmarks effortlessly to start a fresh day
-- 📱 **Fully Responsive Layout:** Seamless use across both mobile and desktop screens
+- **Easy Habit Management:** Quickly add new daily habits or remove completed ones
+- **Real-Time Progress Bar:** Dynamic visual bar and percentage counter updating as you check off tasks
+- **Auto-Save (`localStorage`):** Keeps your habits and daily progress saved even after refreshing the browser
+- **One-Click Daily Reset:** Clear all completed checkmarks effortlessly to start a fresh day
+- **Fully Responsive Layout:** Seamless use across both mobile and desktop screens
 
 ## 🌐 Live Demo
 
